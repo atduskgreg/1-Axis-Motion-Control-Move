@@ -40,7 +40,7 @@ void setup() {
 int currentFrame = 0;
 void draw() {
   image(mov, 0, 0);
-  int m = int(map(zPositions.get(currentFrame), -1236, -164, 0, 180));
+  int m = int(map(zPositions.get(currentFrame), -1236, -164, 20, 160));
   myPort.write(m);
   currentFrame++;
 }
